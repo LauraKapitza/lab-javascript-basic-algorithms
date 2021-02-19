@@ -41,7 +41,8 @@ if ( hacker1 > hacker2) {
   console.log("What?! You both have the same name?")
 };
 
-//bonus
+//bonus 1
+
 //j'ai ajouté un espace à la fin des deux premiers paragraphes
 let lorem = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo lorem non dolor bibendum varius. Maecenas ut risus quis purus varius vestibulum. Donec et odio ut quam efficitur tempor nec id mi. Pellentesque tempus, tellus at fermentum egestas, arcu nisl iaculis turpis, gravida commodo ipsum odio sed dolor. Fusce posuere non mi a placerat. Donec at lobortis metus. Aliquam mollis quis risus a rhoncus. 
 
@@ -68,9 +69,10 @@ for (let i = 0 ; i <= lorem.length ; i++) {
 }
 console.log(countEt);
 
-//bonus2
+//bonus2 - Mathilde's version
 
-let phraseToCheck = "Was it a car or a cat I saw?";
+//si j'ajoute un autre phrase comme "Amor, Roma", le code ne fonctionne plus :(
+let phraseToCheck = prompt("Ecrivez une phrase ici.");
 
 let aLendroit = '';
 let aLenvers = '';
