@@ -77,27 +77,27 @@ let aLendroit = '';
 let aLenvers = '';
 
 //met la phrase en minuscules
-phraseToCheck = phraseToCheck.toLowerCase();
+let phraseToCheckLow = phraseToCheck.toLowerCase();
 
 //créé une chaine à l'endroit uniquement avec les lettres
-for (let i = 0; i < phraseToCheck.length; i++) {
-  if (!(phraseToCheck[i] >= "a" && phraseToCheck[i] <= "z")){
+for (let i = 0; i < phraseToCheckLow.length; i++) {
+  if (!(phraseToCheckLow[i] >= "a" && phraseToCheckLow[i] <= "z")){
     continue;
   }
-  aLendroit += phraseToCheck[i];
+  aLendroit += phraseToCheckLow[i];
 }
 
 //créé une chaine à l'envers uniquement avec les lettres
-for (let i = phraseToCheck.length -1 ; i >= 0; i--) {
-  if (!(phraseToCheck[i] >= "a" && phraseToCheck[i] <= "z")){
+for (let i = phraseToCheckLow.length -1 ; i >= 0; i--) {
+  if (!(phraseToCheckLow[i] >= "a" && phraseToCheckLow[i] <= "z")){
     continue;
   }
-  aLenvers += phraseToCheck[i];
+  aLenvers += phraseToCheckLow[i];
 }
 
 //compare les deux chaines
 if (aLendroit === aLenvers) {
-  console.log(`${phraseToCheck} est un Palindrome`)
+  console.log(`"${phraseToCheck}" est un Palindrome`)
 } else {
-  console.log (`${phraseToCheck} n'est pas un Palindrome`)
+  console.log (`"${phraseToCheck}" n'est pas un Palindrome`)
 }
