@@ -69,32 +69,30 @@ for (let i = 0 ; i <= lorem.length ; i++) {
 }
 console.log(countEt);
 
-//bonus2 - Mathilde's version
+//bonus2
 
-//si j'ajoute un autre phrase comme "Amor, Roma", le code ne fonctionne plus :(
-let phraseToCheck = prompt("Ecrivez une phrase ici.");
-
+//les variables
+let phraseToCheck = prompt("Ecrivez une phrase ici");
 let aLendroit = '';
 let aLenvers = '';
 
-
-//met en minuscules
-phraseToCheckLow = phraseToCheck.toLowerCase();
+//met la phrase en minuscules
+phraseToCheck = phraseToCheck.toLowerCase();
 
 //créé une chaine à l'endroit uniquement avec les lettres
 for (let i = 0; i < phraseToCheck.length; i++) {
-  if (!(phraseToCheckLow[i] >= "a" && phraseToCheckLow[i] <= "z")){
+  if (!(phraseToCheck[i] >= "a" && phraseToCheck[i] <= "z")){
     continue;
   }
-  aLendroit += phraseToCheckLow[i];
+  aLendroit += phraseToCheck[i];
 }
 
 //créé une chaine à l'envers uniquement avec les lettres
 for (let i = phraseToCheck.length -1 ; i >= 0; i--) {
-  if (!(phraseToCheckLow[i] >= "a" && phraseToCheckLow[i] <= "z")){
+  if (!(phraseToCheck[i] >= "a" && phraseToCheck[i] <= "z")){
     continue;
   }
-  aLenvers += phraseToCheckLow[i];
+  aLenvers += phraseToCheck[i];
 }
 
 //compare les deux chaines
